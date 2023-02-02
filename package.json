@@ -1,0 +1,10 @@
+{
+    "name": "class-app",
+    "version": "1.0.0",
+    "author": "Rodolfo Kirch Veiga",
+    "workspaces": [
+        "infra",
+        "back",
+        "front"
+    ]
+}
