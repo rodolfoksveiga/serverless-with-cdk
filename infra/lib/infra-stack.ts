@@ -74,8 +74,8 @@ export class InfraStack extends Stack {
         // cognito
         const userPoolName = 'rodolfo-user-pool'
         const userPool = new UserPool(this, userPoolName, {
-            removalPolicy: RemovalPolicy.DESTROY,
             userPoolName: userPoolName,
+            removalPolicy: RemovalPolicy.DESTROY,
             selfSignUpEnabled: false,
             standardAttributes: {
                 email: {
@@ -241,7 +241,6 @@ export class InfraStack extends Stack {
                 },
             }
         )
-        //endregion
 
         // GET /provider/{id}
         const providerIdResource = providerResource.addResource('{id}')
